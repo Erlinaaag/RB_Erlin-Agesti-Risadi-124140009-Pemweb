@@ -13,7 +13,7 @@ Website terdiri dari dua halaman, yaitu halaman form pendaftaran dan halaman det
 | Keterangan | Informasi |
 |---|---|
 | Nama | Erlin Agesti Risadi |
-| NIM | 124140001 |
+| NIM | 124140009 |
 | Program Studi | Teknik Informatika |
 | Institusi | Institut Teknologi Sumatera |
 | Mata Kuliah | Pemrograman Web |
@@ -24,7 +24,7 @@ Website terdiri dari dua halaman, yaitu halaman form pendaftaran dan halaman det
 ## Struktur Folder
 
 ```text
-task_3/
+task3/
 │
 ├── index.html
 ├── detail.html
