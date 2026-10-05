@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Pendaftar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="detail-box">
+
+            <h1 id="judul">Detail Pendaftar</h1>
+
+            <p class="subtitle">
+                Berikut adalah informasi data pendaftar.
+            </p>
+
+            <div class="status-box">
+                <strong>Status Pendaftaran</strong>
+                <span>Berhasil</span>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Data</th>
+                    <th>Informasi</th>
+                </tr>
+
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td id="hasilNama">-</td>
+                </tr>
+
+                <tr>
+                    <td>NIM</td>
+                    <td id="hasilNim">-</td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td id="hasilEmail">-</td>
+                </tr>
+
+                <tr>
+                    <td>Program Studi</td>
+                    <td id="hasilProdi">-</td>
+                </tr>
+
+                <tr>
+                    <td>Alamat</td>
+                    <td id="hasilAlamat">-</td>
+                </tr>
+            </table>
+
+            <div class="info-box">
+                <h3>Informasi</h3>
+                <p>
+                    Data di atas merupakan data yang telah Anda
+                    masukkan pada formulir pendaftaran.
+                </p>
+            </div>
+
+            <a href="index.html" class="back-button">
+                Kembali ke Form
+            </a>
+
+        </div>
+    </div>
+
+    <script>
+        // Mengambil data dari query string
+        const params = new URLSearchParams(window.location.search);
+
+        const nama = params.get("nama");
+        const nim = params.get("nim");
+        const email = params.get("email");
+        const prodi = params.get("prodi");
+        const alamat = params.get("alamat");
+
+        // Menampilkan data ke halaman
+        document.getElementById("hasilNama").textContent = nama || "-";
+        document.getElementById("hasilNim").textContent = nim || "-";
+        document.getElementById("hasilEmail").textContent = email || "-";
+        document.getElementById("hasilProdi").textContent = prodi || "-";
+        document.getElementById("hasilAlamat").textContent = alamat || "-";
+    </script>
+
+</body>
+</html>
